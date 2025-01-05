@@ -1,10 +1,16 @@
 {
     "manifest_version": 3,
     "name": "Truth-ify",
-    "version": "0.1.0",
+    "version": "0.1.5",
     "description": "A tool to help identify potential misinformation online.",
+    "icons": {
+        "32": "assets/icon32.png",
+        "48": "assets/icon48.png",
+        "64": "assets/icon64.png",
+        "128": "assets/icon128.png"
+    },
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "index.html"
     },
     "permissions": [
         "activeTab",
