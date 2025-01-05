@@ -1,10 +1,7 @@
-
-
 (function() {
     console.log("Content script injected!");
 
     function extractPageContent() {
-        // Basic example: Extract all text from <p> tags
         const paragraphs = document.querySelectorAll('p');
         let pageText = '';
         paragraphs.forEach(p => {
@@ -14,7 +11,12 @@
         return pageText;
     }
 
-    let extractedText = extractPageContent(); // Use let instead of const
-    console.log("Extracted Text:", extractedText);
+    chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+        if (request.action === "getPageContent") {
+            let extractedText = extractPageContent();
+            console.log("Extracted Text:", extractedText);
+            sendResponse({ pageText: extractedText });
+            return true;
+        }
+    });
 })();
-
