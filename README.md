@@ -28,9 +28,14 @@ For the MVP, we're focusing on these key features:
 
 We are thinking of using React and Tailwind CSS for the frontend, maybe with a UI library like Aceternity to make things look slick. The backend is TBD, but either way, we're aiming for a smooth and intuitive user experience.
 
-### Getting Started:
+### Getting Started (Build from Source):
 
 We'll update this section soon with instructions on how to get the project up and running locally. Stay tuned!
+
+### Getting Started (Install):
+1. Goto the [Releases](https://github.com/aadirajuthup/coderstent-hacksprint/releases) section
+2. Download latest build release of Truth-ify
+3. Follow install instructions
 
 ### Folder Structure:
 ```
